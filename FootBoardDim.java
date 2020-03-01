@@ -3,15 +3,14 @@ import java.util.Scanner;
 
 public class FootBoardDim {
   /**
-  * This is a dice roll guessing game. It now uses a function to return the value.
+  * This is a program that takes 2 parameters, the length and the width and determines the height.
   * @author Michias Shiferaw
   * @Version 2.0
   * @since 2020-02-27
   */
   public static double footBoardDim(double width, double height) {
-    //Gets two dimensions of a board and returns what the 
-    // third one would be in order for it to be a Board Foot
-    height = 144 / (width * height);
+    
+   // height = 144 / (width * length);
     return height;
   }
 
@@ -26,7 +25,7 @@ public class FootBoardDim {
 
     Scanner userInput = new Scanner(System.in);
     double length;
-    
+    double height;
     
     System.out.println("Enter the length of the board foot (inches):");
     length = userInput.nextDouble();
@@ -43,8 +42,8 @@ public class FootBoardDim {
       System.out.print("Invalid input! ");
       System.exit(0);
     }
-
+    height = 144 / (width * length);
     System.out.println("(In inches) the final dimension is ");
-    System.out.print(footBoardDim(length, width));
+    System.out.print(height);
   }
 }
