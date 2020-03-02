@@ -15,7 +15,7 @@ public class FootBoardDim {
   }
 
   /**
-  * This is a dice roll guessing game. It now uses a function to return the value.
+  * This is a program that takes 2 parameters, the length and the width and determines the height.
   * @author Michias Shiferaw
   * @Version 2.0
   * @since 2020-02-27
